@@ -11,5 +11,19 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('', 'HomeController@index')->name('home');
+
+Route::get('listtour','HomeController@listtour')->name('listtour');
+
+Route::get('detail','HomeController@detail')->name('detail');
+
+Route::get('booking','HomeController@booking')->name('booking');
+
+Route::post('do-booking','HomeController@doBooking')->name('do_booking');
+
+Route::get('booking-success','HomeController@bookingsuccess')->name('booking_success');
+
+Route::post('do-contact', 'HomeController@docontact')->name('docontact');
+
+Route::get('contact', 'HomeController@contact')->name('contact');
 

@@ -75,7 +75,7 @@
             <div class="hotel-search-form-area">
                 <div class="container-fluid">
                     <div class="hotel-search-form">
-                        <form action="tourlist.php" method="get">
+                        <form action="{{route('listtour')}}" method="get">
                             <div class="row justify-content-between align-items-end">
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="from">出発地</label>
@@ -98,7 +98,7 @@
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="to">行先</label>
                                     <select name="to" id="to" class="form-control">
-                                        <?php for($i = 0;$i < $countDataPrefecture  ;$i++) { ?>
+                                        <?php for($i = 0;$i < $countDataPrefecture;$i++) { ?>
                                         <option value="<?php echo $dataPrefecture[$i]->id; ?>"><?php echo $dataPrefecture[$i]->name; ?></option>
                                         <?php } ?>
                                     </select>
@@ -150,11 +150,11 @@
                 </div>
             </div>
 
-            <div class="container mt-100">
+            <!-- <div class="container mt-100">
                 <div class="row align-items-center">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6"> -->
                         <!-- Section Heading -->
-                        <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+                        <!-- <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
                             <h6>About Us</h6>
                             <h2>Welcome to <br>Roberto Hotel Luxury</h2>
                         </div>
@@ -165,10 +165,10 @@
                             <p class="wow fadeInUp" data-wow-delay="400ms">Manager: <span>Michen Taylor</span></p>
                             <img src="img/core-img/signature.png" alt="" class="wow fadeInUp" data-wow-delay="500ms">
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-12 col-lg-6">
                         <div class="about-us-thumbnail mb-100 wow fadeInUp" data-wow-delay="700ms">
-                            <div class="row no-gutters">
+                            <!-- <div class="row no-gutters">
                                 <div class="col-6">
                                     <div class="single-thumb">
                                         <img src="img/bg-img/13.jpg" alt="">
@@ -183,7 +183,7 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -194,13 +194,13 @@
         <section class="roberto-rooms-area">
             <div class="rooms-slides owl-carousel">
                 <!-- Single Room Slide -->
-                <div class="single-room-slide d-flex align-items-center">
+               <!-- <div class="single-room-slide d-flex align-items-center"> -->
                     <!-- Thumbnail -->
-                    <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                   <!-- <div class="room-thumbnail h-100 bg-img" style="background-image: url(img/bg-img/16.jpg);"></div> -->
 
                     <!-- Content -->
 
-                    <div class="room-content">
+                    <!-- <div class="room-content">-->
                         <!--<h2 data-animation="fadeInUp" data-delay="100ms">Premium King Room</h2>
                         <h3 data-animation="fadeInUp" data-delay="300ms">400$ <span>/ Day</span></h3>
                         <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
@@ -211,13 +211,15 @@
                         </ul>
                         -->
 
-                        <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a>
-                    </div>
-                </div>
-
+                       <!-- <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a> -->
+                   <!-- </div>
+                </div> -->
+            <section class="roberto-rooms-area">
+                <div class="rooms-slides owl-carousel">
                 <!-- Single Room Slide -->
                 <?php for($i = 0;$i < $countDataTop;$i++){ ?>
-                <div class="single-room-slide d-flex align-items-center">
+                        <!-- Single Room Slide -->
+                        <div class="single-room-slide d-flex align-items-center">
                     <!-- Thumbnail -->
                     <div class="room-thumbnail h-100 bg-img"
                          style="background-image: url({{$dataListToursTop[$i]->image}});"></div>
@@ -226,16 +228,16 @@
                     <div class="room-content">
 
                         <h2 data-animation="fadeInUp" data-delay="100ms"><?php echo $dataListToursTop[$i]->name;?></h2>
-                        <h3 data-animation="fadeInUp" data-delay="300ms"><?php echo $dataListToursTop[$i]->price;?> <span>/ Day</span>
+                        <h3 data-animation="fadeInUp" data-delay="300ms"><?php echo $dataListToursTop[$i]->price;?> <span>円/ Day</span>
                         </h3>
                         <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
-                            <li><span><i class="fa fa-check"></i> Size</span> <span>: 30 ft</span></li>
-                            <li><span><i class="fa fa-check"></i> Capacity</span> <span>: Max persion 5</span></li>
-                            <li><span><i class="fa fa-check"></i> Bed</span> <span>: King Beds</span></li>
-                            <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
+                            <li><span><i class="fa fa-check"></i> 出発日</span> <span>: <?php echo $dataListToursTop[$i]->start;?></span></li>
+                            <li><span><i class="fa fa-check"></i> 値段</span> <span><?php echo $dataListToursTop[$i]->price;?></span></li>
+                            <li><span><i class="fa fa-check"></i> レビュー</span> <span>: </span></li>
+                            <!-- <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
                             -->
                         </ul>
-                        <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a>
+                        <a href="{{route('detail')}}?idtour={{$dataListToursTop[$i]->id}}" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">詳細</a>
 
                     </div>
                 </div>
@@ -245,7 +247,7 @@
         <!-- Our Room Area End -->
 
         <!-- Testimonials Area Start -->
-        <section class="roberto-testimonials-area section-padding-100-0">
+        <!--<section class="roberto-testimonials-area section-padding-100-0">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
@@ -253,19 +255,19 @@
                             <img src="img/bg-img/10.jpg" alt="">
                             <img src="img/bg-img/11.jpg" alt="">
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-12 col-md-6">
+                    <!-- <div class="col-12 col-md-6"> -->
                         <!-- Section Heading -->
-                        <div class="section-heading">
+                        <!-- <div class="section-heading">
                             <h6>Testimonials</h6>
                             <h2>Our Guests Love Us</h2>
-                        </div>
+                        </div> -->
                         <!-- Testimonial Slide -->
-                        <div class="testimonial-slides owl-carousel mb-100">
+                        <!-- <div class="testimonial-slides owl-carousel mb-100">-->
 
                             <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide">
+                           <!--  <div class="single-testimonial-slide">
                                 <h5>“This can be achieved by applying search engine optimization or popularly known as SEO. This
                                     is a marketing strategy which increases the quality and quantity of traffic flow to a
                                     particular website via search engines.”</h5>
@@ -279,10 +281,9 @@
                                     </div>
                                     <h6>Robert Downey <span>- CEO Deercreative</span></h6>
                                 </div>
-                            </div>
-
+                            </div> -->
                             <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide">
+                            <!-- <div class="single-testimonial-slide">
                                 <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus delectus facilis
                                     molestias, error vitae praesentium quos eaque qui ea, tempore blanditiis sint reprehenderit,
                                     quaerat. Commodi ab architecto sit suscipit exercitationem!”</h5>
@@ -296,10 +297,10 @@
                                     </div>
                                     <h6>Akash Downey <span>- CEO Deercreative</span></h6>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide">
+                           <!-- <div class="single-testimonial-slide">
                                 <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ex quos. Alias a rem
                                     maiores, possimus dicta sit distinctio quis iusto!”</h5>
                                 <div class="rating-title">
@@ -312,10 +313,10 @@
                                     </div>
                                     <h6>Downey Sarah <span>- CEO Deercreative</span></h6>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- Single Testimonial Slide -->
-                            <div class="single-testimonial-slide">
+                            <!-- <div class="single-testimonial-slide">
                                 <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi laboriosam fugit
                                     suscipit aspernatur, minima minus voluptatum, id ab atque similique ex earum. Magni.”</h5>
                                 <div class="rating-title">
@@ -334,24 +335,24 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Testimonials Area End -->
 
         <!-- Projects Area Start -->
-        <section class="roberto-project-area">
+        <!-- <section class="roberto-project-area"> -->
             <!-- Projects Slide -->
-            <div class="projects-slides owl-carousel">
+            <!-- <div class="projects-slides owl-carousel"> -->
                 <!-- Single Project Slide -->
-                <div class="single-project-slide active bg-img" style="background-image: url(img/bg-img/5.jpg);">
+                <!-- <div class="single-project-slide active bg-img" style="background-image: url(img/bg-img/5.jpg);"> -->
                     <!-- Project Text -->
-                    <div class="project-content">
+                    <!-- <div class="project-content">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Hover Effects -->
-                    <div class="hover-effects">
+                    <!-- <div class="hover-effects">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
@@ -361,19 +362,19 @@
                         <a href="#" class="btn project-btn">Discover Now <i class="fa fa-long-arrow-right"
                                                                             aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Single Project Slide -->
-                <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/6.jpg);">
+                <!-- <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/6.jpg);">-->
                     <!-- Project Text -->
-                    <div class="project-content">
+                    <!--<div class="project-content">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Hover Effects -->
-                    <div class="hover-effects">
+                    <!-- <div class="hover-effects">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
@@ -383,19 +384,19 @@
                         <a href="#" class="btn project-btn">Discover Now <i class="fa fa-long-arrow-right"
                                                                             aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Single Project Slide -->
-                <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/7.jpg);">
+                <!-- <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/7.jpg);"> -->
                     <!-- Project Text -->
-                    <div class="project-content">
+                    <!-- <div class="project-content">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Hover Effects -->
-                    <div class="hover-effects">
+                    <!-- <div class="hover-effects">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
@@ -405,19 +406,19 @@
                         <a href="#" class="btn project-btn">Discover Now <i class="fa fa-long-arrow-right"
                                                                             aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Single Project Slide -->
-                <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/8.jpg);">
+               <!-- <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/8.jpg);"> -->
                     <!-- Project Text -->
-                    <div class="project-content">
+                    <!-- <div class="project-content">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Hover Effects -->
-                    <div class="hover-effects">
+                    <!-- <div class="hover-effects">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
@@ -427,19 +428,19 @@
                         <a href="#" class="btn project-btn">Discover Now <i class="fa fa-long-arrow-right"
                                                                             aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Single Project Slide -->
-                <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/9.jpg);">
+                <!-- <div class="single-project-slide bg-img" style="background-image: url(img/bg-img/9.jpg);"> -->
                     <!-- Project Text -->
-                    <div class="project-content">
+                    <!--<div class="project-content">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Hover Effects -->
-                    <div class="hover-effects">
+                    <!-- <div class="hover-effects">
                         <div class="text">
                             <h6>Entertaiment</h6>
                             <h5>Racing Bike</h5>
@@ -451,71 +452,75 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Projects Area End -->
 
         <!-- Blog Area Start -->
-        <section class="roberto-blog-area section-padding-100-0">
+        <!-- <section class="roberto-blog-area section-padding-100-0"> -->
             <div class="container">
                 <div class="row">
                     <!-- Section Heading -->
                     <div class="col-12">
                         <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                            <h6>Our Blog</h6>
-                            <h2>Latest News &amp; Event</h2>
+                            <!--<h6>List Tour</h6> -->
+                            <h2>ツアー一覧</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                <?php for ($i = 0; $i < 10; $i++) { ?>
+                <?php for($i = 0;$i < $countDataTour;$i++){ ?>
                 <!-- Single Post Area item 1-->
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms"
+                             style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                             <a href="#" class="post-thumbnail"><img src="img/bg-img/2.jpg" alt=""></a>
-                            <!-- Post Meta -->
-                            <div class="post-meta">
-                                <a href="#" class="post-date">Jan 02, 2020</a>
-                                <a href="#" class="post-catagory">Event</a>
+
+                            <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
+                            <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
+                            <?php echo "レビュー:" ?>
+
+                            <div class="col-12 col-md-3">
+                                <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
                             </div>
-                            <!-- Post Title -->
-                            <a href="#" class="post-title">Learn How To Motivate Yourself</a>
-                            <p>How many free autoresponders have you tried? And how many emails did you get through using
-                                them?</p>
-                            <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right"
-                                                                             aria-hidden="true"></i></a>
                         </div>
                     </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="{{route('listtour')}}"><button type="submit"　class="form-control btn roberto-btn w-100">もっと見る</button></a>
+                </div>
+            </div>
+        <!-- </section> -->
                 <!-- Single Post Area item 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <!--<div class="col-12 col-md-6 col-lg-4">
                         <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                            <a href="#" class="post-thumbnail"><img src="img/bg-img/3.jpg" alt=""></a>
+                            <a href="#" class="post-thumbnail"><img src="img/bg-img/3.jpg" alt=""></a> -->
                             <!-- Post Meta -->
-                            <div class="post-meta">
+                           <!-- <div class="post-meta">
                                 <a href="#" class="post-date">Jan 02, 2019</a>
                                 <a href="#" class="post-catagory">Event</a>
-                            </div>
+                            </div> -->
                             <!-- Post Title -->
-                            <a href="#" class="post-title">What If Let You Run The Hubble</a>
+                           <!-- <a href="#" class="post-title">What If Let You Run The Hubble</a>
                             <p>My point here is that if you have no clue for the answers above you probably are not operating a
                                 followup.</p>
                             <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right"
                                                                              aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Single Post Area -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                   <!-- <div class="col-12 col-md-6 col-lg-4">
                         <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                            <a href="#" class="post-thumbnail"><img src="img/bg-img/4.jpg" alt=""></a>
+                            <a href="#" class="post-thumbnail"><img src="img/bg-img/4.jpg" alt=""></a> -->
                             <!-- Post Meta -->
-                            <div class="post-meta">
+                           <!-- <div class="post-meta">
                                 <a href="#" class="post-date">Jan 02, 2019</a>
                                 <a href="#" class="post-catagory">Event</a>
-                            </div>
+                            </div> -->
                             <!-- Post Title -->
-                            <a href="#" class="post-title">Six Pack Abs The Big Picture</a>
+                           <!-- <a href="#" class="post-title">Six Pack Abs The Big Picture</a>
                             <p>Some good steps to take to ensure you are getting what you need out of a autoresponder
                                 include…</p>
                             <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right"
@@ -525,7 +530,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Blog Area End -->
 
         <!-- Call To Action Area Start -->
@@ -536,7 +541,7 @@
                         <div class="col-12 col-md-7">
                             <div class="cta-text mb-50">
                                 <h2>Contact us now!</h2>
-                                <h6>Contact (+12) 345-678-9999 to book directly or for advice</h6>
+                                <h6>Contact (+81) 80-2148-9395 to book directly or for advice</h6>
                             </div>
                         </div>
                         <div class="col-12 col-md-5 text-right">
