@@ -14,6 +14,7 @@
             </div>
 
             <div class="row">
+            <?php if($countDataTour>0){ ?>
             <?php for($i = 0;$i < $countDataTour;$i++){ ?>
             <!-- Single Post Area item 1-->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -40,7 +41,11 @@
                     </div>
                 </div>
                 <?php } ?>
-
+                <?php }else{?>
+                    <div>
+                        Không có tour bạn mong muốn
+                    </div>
+                <?php  } ?>
             </div>
         </div>
     </section>

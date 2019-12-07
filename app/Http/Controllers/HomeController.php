@@ -21,10 +21,18 @@ class HomeController extends Controller
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.is_top', '=', 1)
             ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image')->get();
         $dataPrefecture = DB::table('city')->select()->get();
+        //list destination
+        $dataDestination = DB::table('destination')->select()->get();
+
         $countDataTop = count($dataListTours);
         $countDataPrefecture = count($dataPrefecture);
+        $countDataDestination = count($dataDestination);
         $countDataTour = count($dataListTours);
-        return view("home", compact('dataListTours', 'dataListToursTop', 'dataPrefecture', 'countDataTop', 'countDataPrefecture', 'countDataTour'));
+        return view("home", compact('dataListTours', 'dataListToursTop'
+            , 'dataPrefecture', 'countDataTop', 'countDataPrefecture', 'countDataTour',
+        'countDataDestination','dataDestination'
+
+        ));
     }
 
     public function listtour(Request $request)
@@ -32,8 +40,20 @@ class HomeController extends Controller
         $from = $request->input('from', null);
         $to = $request->input('to', null);
         $departDate = $request->input('depart-date', null);
-        $dataListTours = DB::table('tourlist')
-            ->select()->get();
+
+
+        $query = DB::table('tourlist');
+        if($from!='' && $from !=null){
+            $query = $query->where('city_id','=',$from);
+        }
+        if($to!='' && $to !=null){
+            $query = $query->where('destination_id','=',$to);
+        }
+        if($departDate!='' && $departDate !=null){
+            $query = $query->where('start','=',$departDate);
+        }
+        $dataListTours =$query->select()->get();
+
         $countDataTour = count($dataListTours);
         return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate'));
     }

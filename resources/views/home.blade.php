@@ -80,6 +80,7 @@
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="from">出発地</label>
                                     <select name="from" id="from" class="form-control">
+                                        <option value="">Điểm bắt đầu</option>
                                         <?php for($i = 0;$i < $countDataPrefecture ;$i++) { ?>
                                         <option value="{{$dataPrefecture[$i]->id}}">{{$dataPrefecture[$i]->name}}</option>
                                         <?php } ?>
@@ -98,8 +99,9 @@
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="to">行先</label>
                                     <select name="to" id="to" class="form-control">
-                                        <?php for($i = 0;$i < $countDataPrefecture;$i++) { ?>
-                                        <option value="<?php echo $dataPrefecture[$i]->id; ?>"><?php echo $dataPrefecture[$i]->name; ?></option>
+                                        <option value="">Chọn điểm đến</option>
+                                        <?php for($i = 0;$i < $countDataDestination;$i++) { ?>
+                                        <option value="<?php echo $dataDestination[$i]->id; ?>"><?php echo $dataDestination[$i]->name; ?></option>
                                         <?php } ?>
                                     </select>
                                     <!--<input type="date" class="form-control" id="checkOut" name="checkout-date"> -->
