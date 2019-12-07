@@ -212,8 +212,9 @@
                         -->
 
                        <!-- <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a> -->
-                   <!-- </div>
-                </div> -->
+                   <!-- </div>-->
+                </div>
+        </section>
             <section class="roberto-rooms-area">
                 <div class="rooms-slides owl-carousel">
                 <!-- Single Room Slide -->
