@@ -150,5 +150,11 @@ class HomeController extends Controller
             );
         }
     }
+    public function search(Request $request){
+        $from = $request->input('from', null);
+        $to = $request->input('to', null);
+        $departDate = $request->input('depart-date', null);
+        //$search = $request->input()
+    }
 }
 

@@ -95,7 +95,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="./index.html">ホームページ</a></li>
+                                <li class="active"><a href="{{route('home')}}">ホームページ</a></li>
                                 <li><a href="http://shouraitour/vietnamtour.html">ベトナム　ツア</a></li>
                                 <li><a href="http://shouraitour/japantour.html">日本　ツア</a></li>
                                 <li><a href="http://shouraitour/hotel.html">ホテル</a></li>
