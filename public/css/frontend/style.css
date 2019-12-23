@@ -1238,7 +1238,7 @@ input:focus {
 
 .rooms-slides {
   position: relative;
-  z-index: 1; }
+  z-index: 0 !important; }
   .rooms-slides .owl-prev,
   .rooms-slides .owl-next {
     -webkit-transition-duration: 500ms;
