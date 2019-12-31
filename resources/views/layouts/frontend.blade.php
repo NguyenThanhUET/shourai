@@ -79,7 +79,7 @@
                 <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="{{@asset('img/core-img/logo.png')}}" alt=""></a>
+                    <a class="nav-brand" href="index.html"><img src="{{@asset('img/core-img/logo3.png')}}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -96,10 +96,8 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li class="active"><a href="{{route('home')}}">ホームページ</a></li>
-                                <li><a href="http://shouraitour/vietnamtour.html">ベトナム　ツア</a></li>
-                                <li><a href="http://shouraitour/japantour.html">日本　ツア</a></li>
-                                <li><a href="http://shouraitour/hotel.html">ホテル</a></li>
-                                <li><a href="{{route('contact')}}">お問い合わせ</a></li>
+                                <li class="active"><a href="{{route('listtour')}}">ツアー一覧</a></li>
+                                <li class="active"><a href="{{route('contact')}}">お問い合わせ</a></li>
                             </ul>
                             <!-- Search -->
                             <!--<div class="search-btn ml-4">
@@ -132,7 +130,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <!-- Footer Logo -->
-                        <a href="#" class="footer-logo"><img src="{{@asset('img/core-img/logo2.png')}}" alt=""></a>
+                        <a href="#" class="footer-logo"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a>
 
                         <!-- <h4>+12 345-678-9999</h4>
                         <span>Info.colorlib@gmail.com</span>

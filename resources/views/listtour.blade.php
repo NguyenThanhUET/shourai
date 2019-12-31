@@ -43,7 +43,7 @@
                 <?php } ?>
                 <?php }else{?>
                     <div>
-                        Không có tour bạn mong muốn
+                        ツアーが見つけません。
                     </div>
                 <?php  } ?>
             </div>

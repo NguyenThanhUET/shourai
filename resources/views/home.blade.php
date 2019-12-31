@@ -1,5 +1,15 @@
 @extends('layouts.frontend')
 @section('content')
+    <style>
+        .listtour{
+            margin-top: 50px;
+        }
+        .roberto-btn{
+            width: 100px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
         <!-- Welcome Area Start -->
         <section class="welcome-area">
             <div class="welcome-slides owl-carousel">
@@ -80,7 +90,7 @@
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="from">出発地</label>
                                     <select name="from" id="from" class="form-control">
-                                        <option value="">Điểm bắt đầu</option>
+                                        <option value="">選択してください</option>
                                         <?php for($i = 0;$i < $countDataPrefecture ;$i++) { ?>
                                         <option value="{{$dataPrefecture[$i]->id}}">{{$dataPrefecture[$i]->name}}</option>
                                         <?php } ?>
@@ -99,7 +109,7 @@
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="to">行先</label>
                                     <select name="to" id="to" class="form-control">
-                                        <option value="">Chọn điểm đến</option>
+                                        <option value="">選択してください</option>
                                         <?php for($i = 0;$i < $countDataDestination;$i++) { ?>
                                         <option value="<?php echo $dataDestination[$i]->id; ?>"><?php echo $dataDestination[$i]->name; ?></option>
                                         <?php } ?>
@@ -235,7 +245,7 @@
                         </h3>
                         <ul class="room-feature" data-animation="fadeInUp" data-delay="500ms">
                             <li><span><i class="fa fa-check"></i> 出発日</span> <span>: <?php echo $dataListToursTop[$i]->start;?></span></li>
-                            <li><span><i class="fa fa-check"></i> 値段</span> <span><?php echo $dataListToursTop[$i]->price;?></span></li>
+                            <li><span><i class="fa fa-check"></i> 値段</span> <span>: <?php echo $dataListToursTop[$i]->price;?></span></li>
                             <li><span><i class="fa fa-check"></i> レビュー</span> <span>: </span></li>
                             <!-- <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
                             -->
@@ -466,7 +476,7 @@
                     <div class="col-12">
                         <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                             <!--<h6>List Tour</h6> -->
-                            <h2>ツアー一覧</h2>
+                            <h3 class="listtour"> ツアー一覧</h3>
                         </div>
                     </div>
                 </div>
@@ -482,7 +492,6 @@
                             <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
                             <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
                             <?php echo "レビュー:" ?>
-
                             <div class="col-12 col-md-3">
                                 <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
                             </div>
@@ -491,7 +500,7 @@
                     <?php } ?>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a href="{{route('listtour')}}"><button type="submit"　class="form-control btn roberto-btn w-100">もっと見る</button></a>
+                    <a href="{{route('listtour')}}"><button type="submit"class="btn roberto-btn mt-30">もっと見る</button></a>
                 </div>
             </div>
         <!-- </section> -->

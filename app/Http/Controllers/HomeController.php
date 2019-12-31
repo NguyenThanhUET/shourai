@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Validator;
 use Illuminate\Support\Facades\Session;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -15,7 +16,7 @@ class HomeController extends Controller
     {
         //Get data from database
         //Block 1: lấy lít tours
-        $dataListTours = DB::table('tourlist')->select()->get();
+        $dataListTours = DB::table('tourlist')->limit(6)->orderBy('start','desc')->get();
         //BLock 2: Lấy list tour noi bat
         $dataListToursTop = DB::table('tourlist')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.is_top', '=', 1)
@@ -24,10 +25,11 @@ class HomeController extends Controller
         //list destination
         $dataDestination = DB::table('destination')->select()->get();
 
-        $countDataTop = count($dataListTours);
+        $countDataTop = count($dataListToursTop);
         $countDataPrefecture = count($dataPrefecture);
         $countDataDestination = count($dataDestination);
         $countDataTour = count($dataListTours);
+
         return view("home", compact('dataListTours', 'dataListToursTop'
             , 'dataPrefecture', 'countDataTop', 'countDataPrefecture', 'countDataTour',
         'countDataDestination','dataDestination'
@@ -40,6 +42,7 @@ class HomeController extends Controller
         $from = $request->input('from', null);
         $to = $request->input('to', null);
         $departDate = $request->input('depart-date', null);
+        $dt= Carbon::now();
 
 
         $query = DB::table('tourlist');
@@ -52,10 +55,15 @@ class HomeController extends Controller
         if($departDate!='' && $departDate !=null){
             $query = $query->where('start','=',$departDate);
         }
-        $dataListTours =$query->select()->get();
+        $dataListTours =$query->select();
 
+        if($departDate>$dt) {
+            $dataListTours= $query ->get();
+        }else {
+            $dataListTours = $query->where('start', '>', $dt)->get();
+        }
         $countDataTour = count($dataListTours);
-        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate'));
+        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate','dt'));
     }
 
     public function detail(Request $request)
@@ -65,7 +73,7 @@ class HomeController extends Controller
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.id', '=', $idtour)
             ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image')
             ->first();
-
+//dd($dataListTours);
         return view("detail", compact('dataListTours'));
     }
 
@@ -176,5 +184,7 @@ class HomeController extends Controller
         $departDate = $request->input('depart-date', null);
         //$search = $request->input()
     }
+
 }
+
 

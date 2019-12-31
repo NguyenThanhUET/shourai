@@ -27,3 +27,4 @@ Route::post('do-contact', 'HomeController@docontact')->name('docontact');
 
 Route::get('contact', 'HomeController@contact')->name('contact');
 
+
