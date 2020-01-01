@@ -11,6 +11,21 @@
 |
 */
 
+Route::get('admin', 'Auth\LoginController@index')->name('admin.login');
+Route::prefix('auth')->group(function () {
+    Route::post('login', 'Auth\LoginController@login')->name('auths.dologin');
+    Route::get('logout', 'Auth\LoginController@logout')->name('auths.logout');
+});
+Route::middleware(['auth.basic'])->group(function () {
+    Route::prefix('admin')->group(function () {
+        Route::get('dashboard', 'Backend\DashboardController@index')->name('dashboard');
+        Route::get('destination', 'Backend\DestinationController@index')->name('admin.destination.index');
+        Route::get('destination/edit', 'Backend\DestinationController@edit')->name('admin.destination.edit');
+        Route::post('destination/edit', 'Backend\DestinationController@doEdit')->name('admin.destination.do_edit');
+        Route::get('destination/add', 'Backend\DestinationController@add')->name('admin.destination.add');
+    });
+});
+
 Route::get('', 'HomeController@index')->name('home');
 
 Route::get('listtour','HomeController@listtour')->name('listtour');

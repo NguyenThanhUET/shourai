@@ -1,15 +1,511 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php" line="57" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f34509-e818-42ff-b974-3534587e2314" name="Default Changelist" comment="ggggg">
+    <list default="true" id="46f34509-e818-42ff-b974-3534587e2314" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/UserCreate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DestinationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/auths/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/common/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/common/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-BlackItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-BoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-Book.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-BookItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/CircularStd-MediumItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/circular-std/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flag-icon.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ae.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/af.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ai.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/al.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/am.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/aq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/as.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/au.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/aw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ax.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/az.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ba.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/be.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/br.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/by.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/bz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ca.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ci.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/co.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/cz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/de.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/dj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/dk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/dm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/do.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/dz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ec.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/eg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/eh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/er.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/es.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/et.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/fr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ga.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/gy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/hk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/hm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/hn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/hr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ht.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/hu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/id.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/il.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/im.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/io.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/iq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ir.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/is.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/it.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/je.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/jm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/jo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/jp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ki.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/km.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ky.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/kz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/la.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/li.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ls.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/lv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ly.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/md.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/me.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ml.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/my.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/mz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ne.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ng.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ni.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/np.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/nz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/om.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/pw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/py.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/qa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/re.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/rs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ru.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/rw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/se.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/si.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/so.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/st.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sx.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/sz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/td.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/th.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tj.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/to.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/tz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ua.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/um.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/us.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/uy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/uz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/va.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/vc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ve.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/vg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/vi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/vn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/vu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/wf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ws.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/ye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/yt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/za.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/zm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/flag-icon-css/flags/zw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/css/fontawesome-all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/webfonts/fa-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontdc99.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontdc99.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontdc99.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontdc99.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/material-design-iconic-font/fonts/materialdesignicons-webfontdc99.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Icons4c82.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Icons4c82.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Icons4c82.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Icons4c82.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Icons4c82.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/simple-line-icons/fonts/Simple-Line-Iconsd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/fonts/themify9f24.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/fonts/themify9f24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/fonts/themifyd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/themify-icons/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/weather-icons/css/weather-icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/fonts/weather-icons/fonts/weathericons-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/libs/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/libs/js/main-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/slimscroll/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/langs/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/emoticons/js/emojis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/emoticons/js/emojis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/quickbars/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/toc/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/content/dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/content/default/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/content/document/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/content/writer/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/content.mobile.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide-dark/skin.mobile.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/content.inline.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/content.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/content.mobile.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/skin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/skins/ui/oxide/skin.mobile.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/themes/mobile/theme.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/themes/silver/theme.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/tinymce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/fontawesome/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.12.1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/Moxie.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/Moxie.xap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ku_IQ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/th_TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/uk_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/i18n/zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/css/jquery.plupload.queue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/backgrounds.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/buttons-disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/delete.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/done.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/error.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/img/transp50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/jquery.plupload.queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.plupload.queue/jquery.plupload.queue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload/css/jquery.ui.plupload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload/img/plupload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload/jquery.ui.plupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/jquery.ui.plupload/jquery.ui.plupload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/moxie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/moxie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/plupload.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/upload_trunk/plupload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lib/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/destination_list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/backend_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/booking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/listtour.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listtour.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +516,83 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="186" selection-start-line="186" selection-end-line="186" />
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/DestinationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="26" />
               <folding>
-                <element signature="e#42#70#0#PHP" expanded="true" />
+                <element signature="e#49#85#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1357">
+              <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+              <folding>
+                <element signature="e#1552#1574#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/destination_list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-352">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend_sidebar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/backend/libs/js/main-js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="838">
+              <caret line="68" column="5" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="39" column="105" selection-start-line="39" selection-start-column="105" selection-end-line="39" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -41,85 +600,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="238">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/detail.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="e#449#527#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/listtour.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="13" selection-end-column="18" />
-              <folding>
-                <element signature="e#373#451#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/booking.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-              <folding>
-                <element signature="e#961#1039#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/contact.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="25" selection-end-column="18" />
-              <folding>
-                <element signature="e#599#677#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5803">
-              <caret line="499" column="26" selection-start-line="499" selection-start-column="26" selection-end-line="499" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/img/icon-no-image.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -141,10 +630,24 @@
       <command text="composer install" />
       <command text="php artisan key:generate" />
       <command text="php artisan serve" />
+      <command text="php artisan migrate" />
+      <command text="php artisan make:command UserCreate" />
+      <command text="php artisan -l" />
+      <command text="php artisan --list" />
+      <command text="php artisan -h" />
+      <command text="php artisan list" />
+      <command text="php artisan user:create admin@mail.com 12345678 Administrator" />
+      <command text="composer dump-autoload" />
+      <command text="php artisan serve" />
+      <command text="php artisan make:auth" />
+      <command text="php artisan serve" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -165,11 +668,24 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/listtour.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/booking.blade.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/UserCreate.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/DashboardController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/destination_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/DestinationController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/destination_list.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php" />
+        <option value="$PROJECT_DIR$/public/lib/backend/libs/js/main-js.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/backend_sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -263,9 +779,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="493" />
-    <option name="y" value="67" />
-    <option name="width" value="855" />
+    <option name="x" value="132" />
+    <option name="y" value="88" />
+    <option name="width" value="816" />
     <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -297,12 +813,42 @@
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+              <item name="Commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
@@ -312,13 +858,19 @@
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
@@ -329,19 +881,64 @@
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
@@ -354,7 +951,7 @@
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
@@ -368,6 +965,16 @@
               <item name="shourai" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shourai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shourai" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -377,21 +984,23 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/lib/backend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\shourai\database" />
-      <recent name="D:\xampp\htdocs\shourai\resources\views" />
-      <recent name="D:\work\xampp\htdocs\shourai\public\css\frontend" />
-      <recent name="D:\work\xampp\htdocs\shourai\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\xampp\htdocs\shourai\public\css\frontend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\xampp\htdocs\shourai\public\lib\backend" />
+      <recent name="D:\work\xampp\htdocs\shourai\app\Http\Controllers\Backend" />
+      <recent name="D:\work\xampp\htdocs\shourai\app\Http\Middleware" />
+      <recent name="D:\work\xampp\htdocs\shourai\app\Http\Controllers\Auth" />
+      <recent name="D:\work\xampp\htdocs\shourai\public\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -450,6 +1059,7 @@
       <workItem from="1576982352759" duration="29000" />
       <workItem from="1577011382357" duration="2062000" />
       <workItem from="1577680796762" duration="19289000" />
+      <workItem from="1577873711998" duration="11443000" />
     </task>
     <task id="LOCAL-00001" summary="sua code trang home va listour">
       <created>1575733056672</created>
@@ -462,13 +1072,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121034000" />
+    <option name="totallyTimeSpent" value="132493000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2065053" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -479,10 +1089,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4977307" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4977307" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="11" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="11" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.15709643" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50226927" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -491,7 +1101,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -502,12 +1112,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4977307" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="11" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="11" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.15709643" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50226927" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -541,96 +1151,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php" />
-    <entry file="file://$USER_HOME$/Downloads/shourai/shourai/index.php" />
-    <entry file="file://$USER_HOME$/Downloads/shourai/shourai/tour.php" />
-    <entry file="file://$PROJECT_DIR$/public/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/detail.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/booking" />
-    <entry file="file://$PROJECT_DIR$/routes/console.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/auth.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/passwords.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/validation.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/booking.php" />
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="159" column="49" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/do_booking.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/booking_success.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php___jb_tmp___" />
     <entry file="file://$PROJECT_DIR$/public/css/frontend/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12682">
@@ -672,37 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/frontend/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="1159" selection-start-line="1159" selection-end-line="1159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/frontend/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="1262" column="9" lean-forward="true" selection-start-line="1262" selection-start-column="9" selection-end-line="1262" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/frontend/css/nice-select.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -716,37 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5803">
-          <caret line="499" column="26" selection-start-line="499" selection-start-column="26" selection-end-line="499" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -757,33 +1215,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/listtour.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="136">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="55" selection-start-line="111" selection-start-column="55" selection-end-line="111" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19703">
+          <caret line="1159" selection-start-line="1159" selection-end-line="1159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/frontend/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21454">
+          <caret line="1262" column="9" selection-start-line="1262" selection-start-column="9" selection-end-line="1262" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/frontend/css/nice-select.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
-            <element signature="e#373#451#0#HTML" expanded="true" />
+            <element signature="e#40#97#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#599#677#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/travel (3).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/booking.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="535">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/listtour.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/common/common.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/UserCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
-            <element signature="e#961#1039#0#HTML" expanded="true" />
+            <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#39#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/backend/fonts/fontawesome/css/fontawesome-all.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="159" column="49" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1522" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="121" selection-start-line="121" selection-end-line="121" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/fontawesome/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32734" selection-start-line="4" selection-start-column="32734" selection-end-line="4" selection-end-column="32734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/concept-master/concept-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="994" column="4" selection-start-line="994" selection-start-column="4" selection-end-line="995" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/backend/slimscroll/jquery.slimscroll.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/icon-no-image.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="39" column="105" selection-start-line="39" selection-start-column="105" selection-end-line="39" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/DestinationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#49#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/gentelella-master/production/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22143" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/langs/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/backend/tinymce/js/tinymce/tinymce.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/destination_edits.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+          <folding>
+            <element signature="e#1552#1574#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/destination_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/backend/libs/js/main-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
         </state>
       </provider>
     </entry>

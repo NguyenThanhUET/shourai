@@ -1,0 +1,36 @@
+.tooltip >.tooltip-inner {
+    background-color /**/: #df1a12;
+    border:none;box-shadow:none;
+    outline:none;
+}
+.tooltip-error >.tooltip-inner{
+    background-color /**/: #df1a12;
+    border:none;box-shadow:none;
+    outline:none;
+}
+.tooltip .tooltip-arrow {
+    border-top-color: #df1a12 !important;
+}
+.input-error{
+    border-color: #df1a12 !important;
+}
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: #dc2d2d !important;
+}
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: #dc2d2d !important;
+}
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: #dc2d2d !important;
+}
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #dc2d2d !important;
+}
+.table-striped .headings{
+    background: #009688;
+    color: white;
+}
+
+.table-striped .headings .animated-checkbox input[type="checkbox"]:checked + .label-text:before {
+    color: white;
+}
