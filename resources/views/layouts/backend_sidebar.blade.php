@@ -21,7 +21,7 @@
                                     <a class="nav-link" href="{{route('admin.destination.index')}}">Lists</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/general.html">Add destination</a>
+                                    <a class="nav-link" href="{{route('admin.destination.add')}}">Add destination</a>
                                 </li>
                             </ul>
                         </div>

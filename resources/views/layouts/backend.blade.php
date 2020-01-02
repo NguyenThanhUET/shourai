@@ -5,17 +5,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('lib/bootstrap/css/bootstrap.min.css')}}">
     <link href="{{asset('lib/backend/fonts/circular-std/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('lib/backend/libs/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('lib/backend/fonts/fontawesome/css/fontawesome-all.css')}}">
+    <link rel="stylesheet" href="{{asset('css/common/toastr.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/common/common.css')}}">
     {{--    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
         <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
         <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
         <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">--}}
-    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <title>Shourai</title>
 </head>
 
 <body>
@@ -111,6 +114,7 @@
 <!-- slimscroll js -->
 <script src="{{asset('lib/backend/slimscroll/jquery.slimscroll.js')}}"></script>
 <script src="{{asset('lib/backend/libs/js/main-js.js')}}"></script>
+<script src="{{asset('js/common/common.js')}}"></script>
 @stack("js")
 </body>
 

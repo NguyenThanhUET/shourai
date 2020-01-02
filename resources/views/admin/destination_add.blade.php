@@ -8,6 +8,7 @@
         .thumb{
             width: 100%;
             max-height: 200px;
+            border: 1px solid #5969ff;
         }
         #preview{
             min-height: 200px;
@@ -45,8 +46,8 @@
                                             <div class="form-group">
                                                 <input id="file" name="image" type="file" class="form-control" accept="image/*"/>
                                                 <div id="preview">
-                                                    <img class="thumb square" data-path="{{$dataDes->src}}"
-                                                         data-src="{{asset($dataDes->image)}}" src="{{asset($dataDes->image)}}">
+                                                    <img class="thumb square" data-path=""
+                                                         data-src="{{asset('img/icon-no-image.svg')}}" src="{{asset('img/icon-no-image.svg')}}">
                                                 </div>
 
                                             </div>
@@ -69,7 +70,7 @@
                                         <label class="control-label" for="rice">Name</label>
                                         <input class="form-control" type="text" name="des_name" id="des_name"
                                                maxlength="100"
-                                               value="{{$dataDes->name}}"/>
+                                               value=""/>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -79,7 +80,7 @@
                                                 id="prefecture">
                                             <option value=''>Select prefecture</option>
                                             <?php foreach ($dataPrefecture as $prefecture) { ?>
-                                            <option value="{{$prefecture->id}}" {{$dataDes->prefecture==$prefecture->id?'selected':''}}>{{$prefecture->name}}</option>
+                                            <option value="{{$prefecture->id}}">{{$prefecture->name}}</option>
                                             <?php } ?>
                                         </select>
                                     </div>
@@ -91,7 +92,7 @@
                                 <div class="form-group" style="display: flex;">
                                     <div class="parent_tinymce">
                                         <textarea class="tinymce" name="page_content"
-                                                  id="page_content">{{$dataDes->content}}</textarea>
+                                                  id="page_content"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +119,7 @@
     <script src="{{asset('lib/backend/tinymce/js/tinymce/jquery.tinymce.min.js')}}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
     <script>
-        var _routeEdit = '{{route("admin.destination.do_edit")}}';
-        var _desId = '{{$dataDes->id}}';
+        var _routeAdd = '{{route("admin.destination.do_add")}}';
         var must_delete_old_image = null;
         $(document).ready(function () {
             tinymce.init({
@@ -167,7 +167,6 @@
         $(document).on("click", ".update", function () {
             _commonClearError();
             let formData = new FormData();
-            formData.append("des_id", _desId);
             formData.append("des_name", $("#des_name").val());
             formData.append("prefecture", $("#prefecture").val());
             formData.append("page_content", tinymce.get("page_content").getContent());
@@ -184,7 +183,7 @@
                 },
                 contentType: false,
                 processData: false,
-                url: _routeEdit,
+                url: _routeAdd,
                 data: formData,
                 beforeSend: _showAjaxLoading(),
                 success: function (result) {
@@ -194,6 +193,7 @@
                             timeOut: 2000,
                             closeButton: true,
                         });
+                        location.href = '{{route('admin.destination.index')}}';
                     } else {
                         _commonShowError(result.data);
                     }

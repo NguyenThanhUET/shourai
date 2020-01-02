@@ -23,6 +23,7 @@ Route::middleware(['auth.basic'])->group(function () {
         Route::get('destination/edit', 'Backend\DestinationController@edit')->name('admin.destination.edit');
         Route::post('destination/edit', 'Backend\DestinationController@doEdit')->name('admin.destination.do_edit');
         Route::get('destination/add', 'Backend\DestinationController@add')->name('admin.destination.add');
+        Route::post('destination/add', 'Backend\DestinationController@doAdd')->name('admin.destination.do_add');
     });
 });
 
