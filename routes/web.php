@@ -24,6 +24,13 @@ Route::middleware(['auth.basic'])->group(function () {
         Route::post('destination/edit', 'Backend\DestinationController@doEdit')->name('admin.destination.do_edit');
         Route::get('destination/add', 'Backend\DestinationController@add')->name('admin.destination.add');
         Route::post('destination/add', 'Backend\DestinationController@doAdd')->name('admin.destination.do_add');
+
+        Route::get('tour', 'Backend\ToursController@index')->name('admin.tours.index');
+        Route::get('tour/edit', 'Backend\ToursController@edit')->name('admin.tours.edit');
+        Route::post('tour/edit', 'Backend\ToursController@doEdit')->name('admin.tours.do_edit');
+        Route::get('tour/add', 'Backend\ToursController@add')->name('admin.tours.add');
+        Route::post('tour/add', 'Backend\ToursController@doAdd')->name('admin.tours.do_add');
+
     });
 });
 
