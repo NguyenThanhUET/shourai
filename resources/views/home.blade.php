@@ -235,7 +235,7 @@
                         <div class="single-room-slide d-flex align-items-center">
                     <!-- Thumbnail -->
                     <div class="room-thumbnail h-100 bg-img"
-                         style="background-image: url({{$dataListToursTop[$i]->image}});"></div>
+                         style="background-image: url({{\App\Helpers\CommonHelper::getImageUrl($dataListToursTop[$i]->image)}});"></div>
 
                     <!-- Content -->
                     <div class="room-content">
@@ -487,7 +487,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms"
                              style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                            <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{$dataListTours[$i]->image}}" alt="" height="300" width="300"></a>
+                            <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt="" height="300" width="300"></a>
                             <h2><?php echo $dataListTours[$i]->name; ?> <br></h2>
                             <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
                             <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
