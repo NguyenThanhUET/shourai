@@ -50,21 +50,21 @@ class HomeController extends Controller
 
         $query = DB::table('tourlist');
         if($from!='' && $from !=null){
-            $query = $query->where('city_id','=',$from);
+            $query = $query->where('tourlist.city_id','=',$from);
         }
         if($to!='' && $to !=null){
-            $query = $query->where('destination_id','=',$to);
+            $query = $query->where('tourlist.destination_id','=',$to);
         }
         if($departDate!='' && $departDate !=null){
-            $query = $query->where('start','=',$departDate);
+            $query = $query->where('tourlist.start','=',$departDate);
         }
-        $dataListTours =$query->select();
-
+        $query = $query->join('destination','destination.id','tourlist.destination_id');
         if($departDate>$dt) {
-            $dataListTours= $query ->get();
+            //nothing
         }else {
-            $dataListTours = $query->where('start', '>', $dt)->get();
+            $query = $query->where('tourlist.start', '>', $dt);
         }
+        $dataListTours =$query->selectRaw('tourlist.*,destination.*')->get();
         $countDataTour = count($dataListTours);
         return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate','dt'));
     }

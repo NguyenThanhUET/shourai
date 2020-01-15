@@ -26,7 +26,7 @@
                      style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;"> -->
                 <!-- <h6>Our Blog</h6> -->
                 <div class="col-md-6">
-                    <img src="{{$dataListTours->image}}" alt="image">
+                    <img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours->image) }}" alt="image">
                 </div>
                 <div class="col-md-6">
                     <div class="row height-full"></div>

@@ -32,14 +32,13 @@ class ToursController extends Controller
     }
     public function edit(Request $request)
     {
-        $idDes = $request->input('des',null);
-        $dataDes = DB::table('destination')->where('id',$idDes)->first();
-        if(!empty($dataDes)){
-            $dataDes->src = $dataDes->image;
-            $dataDes->image = CommonHelper::getImageSrc($dataDes->image);
-        }
+        $idTour = $request->input('tour',null);
+        $dataTour = DB::table('tourlist')
+        ->where('tourlist.id',$idTour)
+            ->first();
+        $des = DB::table('destination')->select('id','name','prefecture')->get();
         $dataPrefecture = DB::table('city')->select()->get();
-        return view('admin.destination_edits',compact('dataDes','dataPrefecture'));
+        return view('admin.tour_edits',compact('dataTour','dataPrefecture','des'));
     }
     public function doEdit(UpdatePrefecture $request){
         $result = new DataResultCollection();

@@ -22,7 +22,7 @@
                         <tbody>
                         @foreach ($dataTour as $tour)
                             <tr>
-                                <td><a class="btn-link" href="{{route('admin.destination.edit')}}?des={{$tour->id}}">#{{$tour->id}}</a></td>
+                                <td><a class="btn-link" href="{{route('admin.tours.edit')}}?tour={{$tour->id}}">#{{$tour->id}}</a></td>
                                 <td>
                                     <div class="m-r-10"><img src="{{$tour->image!=null ?$tour->image:asset('img/icon-no-image.svg')}}" alt="user" class="rounded"
                                                              width="45"></div>
