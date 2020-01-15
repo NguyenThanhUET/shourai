@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="row">
-                contetn des
+                <?php echo $dataListTours->content; ?>
             </div>
         </div>
 

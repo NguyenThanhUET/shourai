@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Entities\DataResultCollection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Validator;
@@ -16,7 +17,11 @@ class HomeController extends Controller
     {
         //Get data from database
         //Block 1: lấy lít tours
-        $dataListTours = DB::table('tourlist')->limit(6)->orderBy('start','desc')->get();
+        $dataListTours = DB::table('tourlist')
+            ->limit(6)->orderBy('start','asc')
+            ->join('destination', 'tourlist.destination_id', '=', 'destination.id')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image, destination.content')
+            ->get();
         //BLock 2: Lấy list tour noi bat
         $dataListToursTop = DB::table('tourlist')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.is_top', '=', 1)
@@ -32,9 +37,7 @@ class HomeController extends Controller
 
         return view("home", compact('dataListTours', 'dataListToursTop'
             , 'dataPrefecture', 'countDataTop', 'countDataPrefecture', 'countDataTour',
-        'countDataDestination','dataDestination'
-
-        ));
+        'countDataDestination','dataDestination'));
     }
 
     public function listtour(Request $request)
@@ -96,7 +99,7 @@ class HomeController extends Controller
 
     public function doBooking(Request $request)
     {
-
+        $result = new DataResultCollection();
         $validatedData = Validator::make($request->all(), [
             'username' => 'required',
             'tel' => 'required',
@@ -135,7 +138,8 @@ class HomeController extends Controller
 
             );
 
-            return redirect('booking-success');
+            $result->message = trans("予約が完了しました");
+            return response()->json($result);
         }
     }
 

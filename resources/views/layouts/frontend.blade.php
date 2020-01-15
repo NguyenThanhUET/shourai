@@ -216,6 +216,7 @@
                         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div> -->
                 </div>
+                </div>
             </div>
         </div>
     </div>

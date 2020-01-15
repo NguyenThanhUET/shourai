@@ -487,11 +487,11 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms"
                              style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                            <a href="#" class="post-thumbnail"><img src="img/bg-img/2.jpg" alt=""></a>
-
+                            <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{$dataListTours[$i]->image}}" alt="" height="300" width="300"></a>
+                            <h2><?php echo $dataListTours[$i]->name; ?> <br></h2>
                             <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
                             <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
-                            <?php echo "レビュー:" ?>
+                            <?php echo "レビュー:★★★★★" ?>
                             <div class="col-12 col-md-3">
                                 <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
                             </div>
