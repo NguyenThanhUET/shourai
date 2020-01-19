@@ -74,7 +74,7 @@ class HomeController extends Controller
         $idtour = $request->input('idtour', null);
         $dataListTours = DB::table('tourlist')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.id', '=', $idtour)
-            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image,destination.content')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content as TContent, tourlist.start,tourlist.end, tourlist.price,destination.image,destination.content')
             ->first();
 //dd($dataListTours);
         return view("detail", compact('dataListTours'));

@@ -13,7 +13,10 @@
             width:1166px;
         }
         .button-booking{
-            padding-top: 48px;
+            padding-bottom: 10px;
+        }
+        .tour-detail{
+            padding-top: 50px;
         }
     </style>
     <div class="container">
@@ -36,19 +39,22 @@
                 <div class="col-md-6">
                     <img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours->image) }}" alt="image" height="500px">
                 </div>
-                <div class="col-md-6">
-                    <div class="row height-full"></div>
+                <div class="col-md-6 tour-detail">
                     <div class="row">
                         <div class="col-title">出発日:</div>
                         <div class="col-md-8"><?php echo $dataListTours->start; ?></div>
                     </div>
                     <div class="row">
-                        <div class="col-title">値段:</div>
-                        <div class="col-md-8"><?php echo $dataListTours->price; ?></div>
+                        <div class="col-title">到着日:</div>
+                        <div class="col-md-8"><?php echo $dataListTours->end; ?></div>
                     </div>
                     <div class="row">
-                        <div class="col-title" >レビュー:</div>
-                        <div class="col-md-8" >★★★★★</div>
+                        <div class="col-title">値段:</div>
+                        <div class="col-md-8"><?php echo $dataListTours->price; ?> <? php echo "円" ?></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-title" >詳細:</div>
+                        <div class="col-md-8" ><?php echo $dataListTours->TContent; ?></div>
                     </div>
                     <div class="row button-booking">
                         <a href="{{route('booking')}}?idtour={{$dataListTours->id}}">
