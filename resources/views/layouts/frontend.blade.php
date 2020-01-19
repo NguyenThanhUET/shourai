@@ -234,7 +234,7 @@
 <script src="{{@asset('js/roberto.bundle.js')}}"></script>
 <!-- Active -->
 <script src="{{@asset('js/default-assets/active.js')}}"></script>
-
+@stack("js")
 </body>
 
 </html>

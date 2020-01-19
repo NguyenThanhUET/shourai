@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Entities\DataResultCollection;
+use App\Entities\SDBStatusCode;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Validator;
@@ -109,9 +110,10 @@ class HomeController extends Controller
         //$idtour=$request -> input('idtour', 'null');
         // return view("do_booking", compact('idtour' ));
         if ($validatedData->fails()) {
-            return redirect('booking')
-                ->withErrors($validatedData)
-                ->withInput();
+            $result =  new DataResultCollection();
+            $result->status = SDBStatusCode::ApiError;
+            $result->data = $validatedData->errors();
+            return response()->json($result);
         } else {
             $idtour = $request->input('idtour');
             //dd($idtour);dd la ko chay cac cau lenh phia duoi dau@@ dd co nghia la in ra roi thoat luon, anh comment, em chay lai la ok
@@ -137,7 +139,10 @@ class HomeController extends Controller
                 )
 
             );
-            return redirect('edit_booking');
+            $result =  new DataResultCollection();
+            $result->status = SDBStatusCode::OK;
+            $result->message = "予約が完了しました！";
+            return response()->json($result);
         }
     }
     public function editbooking (Request $request)
