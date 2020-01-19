@@ -44,6 +44,8 @@ Route::get('booking','HomeController@booking')->name('booking');
 
 Route::post('do-booking','HomeController@doBooking')->name('do_booking');
 
+Route::get('edit-booking', 'HomeController@docontact')->name('edit_booking');
+
 Route::get('booking-success','HomeController@bookingsuccess')->name('booking_success');
 
 Route::post('do-contact', 'HomeController@docontact')->name('docontact');

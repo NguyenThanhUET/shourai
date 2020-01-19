@@ -18,7 +18,7 @@ class HomeController extends Controller
         //Get data from database
         //Block 1: lấy lít tours
         $dataListTours = DB::table('tourlist')
-            ->limit(6)->orderBy('start','asc')
+            ->limit(6)->orderBy('start', 'asc')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')
             ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image, destination.content')
             ->get();
@@ -37,7 +37,7 @@ class HomeController extends Controller
 
         return view("home", compact('dataListTours', 'dataListToursTop'
             , 'dataPrefecture', 'countDataTop', 'countDataPrefecture', 'countDataTour',
-        'countDataDestination','dataDestination'));
+            'countDataDestination', 'dataDestination'));
     }
 
     public function listtour(Request $request)
@@ -45,28 +45,28 @@ class HomeController extends Controller
         $from = $request->input('from', null);
         $to = $request->input('to', null);
         $departDate = $request->input('depart-date', null);
-        $dt= Carbon::now();
+        $dt = Carbon::now();
 
 
         $query = DB::table('tourlist');
-        if($from!='' && $from !=null){
-            $query = $query->where('tourlist.city_id','=',$from);
+        if ($from != '' && $from != null) {
+            $query = $query->where('tourlist.city_id', '=', $from);
         }
-        if($to!='' && $to !=null){
-            $query = $query->where('tourlist.destination_id','=',$to);
+        if ($to != '' && $to != null) {
+            $query = $query->where('tourlist.destination_id', '=', $to);
         }
-        if($departDate!='' && $departDate !=null){
-            $query = $query->where('tourlist.start','=',$departDate);
+        if ($departDate != '' && $departDate != null) {
+            $query = $query->where('tourlist.start', '=', $departDate);
         }
-        $query = $query->join('destination','destination.id','tourlist.destination_id');
-        if($departDate>$dt) {
+        $query = $query->join('destination', 'destination.id', 'tourlist.destination_id');
+        if ($departDate > $dt) {
             //nothing
-        }else {
+        } else {
             $query = $query->where('tourlist.start', '>', $dt);
         }
-        $dataListTours =$query->selectRaw('tourlist.*,destination.*')->get();
+        $dataListTours = $query->selectRaw('tourlist.*,destination.*')->get();
         $countDataTour = count($dataListTours);
-        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate','dt'));
+        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate', 'dt'));
     }
 
     public function detail(Request $request)
@@ -74,7 +74,7 @@ class HomeController extends Controller
         $idtour = $request->input('idtour', null);
         $dataListTours = DB::table('tourlist')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.id', '=', $idtour)
-            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image,destination.content')
             ->first();
 //dd($dataListTours);
         return view("detail", compact('dataListTours'));
@@ -137,12 +137,23 @@ class HomeController extends Controller
                 )
 
             );
-
-            $result->message = trans("予約が完了しました");
-            return response()->json($result);
+            return redirect('edit_booking');
         }
     }
+    public function editbooking (Request $request)
+    {
+        $idTour = $request->input('idtour', null);
+        $dataListTours = DB::table('tourlist')
+            ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.id', '=', $inbound)
+            ->selectRaw('tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image')
+            ->first();
+        $databooking = DB::table('bookingtour')
+            ->join('tourlist', 'tourlist.id', '=', 'bookingtour.idtour')
+            ->selectRaw('bookingtour.id, bookingtour.idtour, bookingtour.username, bookingtour.email, bookingtour.adult, bookingtour.child')
+            ->first();
 
+        return view("edit_booking", compact('dataListTours', 'databooking', 'idTour'));
+    }
     //->with($message);
     public function contact(Request $request)
     {
@@ -152,6 +163,7 @@ class HomeController extends Controller
         return view("contact", compact('dataListContacts'));
 
     }
+
     public function docontact(Request $request)
     {
         $validatedData = Validator::make($request->all(), [
@@ -181,14 +193,9 @@ class HomeController extends Controller
 
             );
         }
-    }
-    public function search(Request $request){
-        $from = $request->input('from', null);
-        $to = $request->input('to', null);
-        $departDate = $request->input('depart-date', null);
-        //$search = $request->input()
-    }
 
+    }
 }
+
 
 

@@ -7,6 +7,14 @@
         .height-full{
             height: 240px;
         }
+        .content{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width:1166px;
+        }
+        .button-booking{
+            padding-top: 48px;
+        }
     </style>
     <div class="container">
         <div class="row">
@@ -26,7 +34,7 @@
                      style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;"> -->
                 <!-- <h6>Our Blog</h6> -->
                 <div class="col-md-6">
-                    <img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours->image) }}" alt="image">
+                    <img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours->image) }}" alt="image" height="500px">
                 </div>
                 <div class="col-md-6">
                     <div class="row height-full"></div>
@@ -42,7 +50,7 @@
                         <div class="col-title" >レビュー:</div>
                         <div class="col-md-8" >★★★★★</div>
                     </div>
-                    <div class="row">
+                    <div class="row button-booking">
                         <a href="{{route('booking')}}?idtour={{$dataListTours->id}}">
                             <button type="submit" class="form-control btn roberto-btn w-100">予約</button>
                         </a>
@@ -50,7 +58,7 @@
 
                 </div>
             </div>
-            <div class="row">
+            <div class="row content">
                 <?php echo $dataListTours->content; ?>
             </div>
         </div>

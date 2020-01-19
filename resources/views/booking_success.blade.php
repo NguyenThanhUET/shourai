@@ -7,9 +7,7 @@
                 <div class="col-12">
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms"
                          style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                        <?php
-                        echo '予約が完了しました。'
-                        ?>
+                        <?php echo "予約が完了しました。"?>
                     </div>
                 </div>
             </div>

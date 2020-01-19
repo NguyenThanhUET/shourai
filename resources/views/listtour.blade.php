@@ -20,7 +20,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms"
                          style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                        <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt=""></a>
+                        <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt="" height="300" width="300"></a>
                         <!-- Post Meta -->
                         <!-- <div class="post-meta">
                             <a href="#" class="post-date">{{$dataListTours[$i]->name}}</a>
