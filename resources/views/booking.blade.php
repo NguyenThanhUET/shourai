@@ -75,12 +75,12 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Xác nhận lại thông tin đăng kí</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
                             <div class="col-12 book-group">
-                                <label for="name"> 名前</label> : label id="name-content"></label>
+                                <label for="name"> 名前</label> : <label id="name-content"></label>
                             </div>
                             <div class="col-12 book-group">
                                 <label for="phonenumber"> 電話番号</label> : <label id="tel-content"></label>
@@ -116,8 +116,8 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">予約が完了しました！</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
                             <p>Bạn đã tiền hành đăng kí tour thành công, chúng tôi sẽ liên hệ với bạn sớm nhất để hoàn tất thủ tục đặt chỗ</p>
