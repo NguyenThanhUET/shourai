@@ -8,7 +8,7 @@ use App\Entities\SDBStatusCode;
 use App\Helpers\CommonHelper;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\UpdatePrefecture;
+use App\Http\Requests\UpdateTour;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -40,36 +40,25 @@ class ToursController extends Controller
         $dataPrefecture = DB::table('city')->select()->get();
         return view('admin.tour_edits',compact('dataTour','dataPrefecture','des'));
     }
-    public function doEdit(UpdatePrefecture $request){
+    public function doEdit(UpdateTour $request){
         $result = new DataResultCollection();
         $desData = array();
-        $image = $request->file("image");
-        $must_delete_old_image = $request->input('must_delete_old_image', 0);
-        $newUploadedFileURI = null;
-        $diskLocalName = CommonHelper::getDefaultStorageDiskName();
-        $desData["name"] = $request->input("des_name");
-        $desData["prefecture"] = $request->input("prefecture");
+
+        $idTour = $request->input("tour_id");
+        $desData["name"] = $request->input("tour_name");
+        $desData["city_id"] = $request->input("city_id");
+        $desData["destination_id"] = $request->input("destination");
+        $desData["start"] = $request->input("start_time");
+        $desData["end"] = $request->input("end_time");
+        $desData["price"] = $request->input("price");
+        $desData["is_top"] = $request->input("is_top");
         $desData["content"] = $request->input("page_content");
-        $desId = $request->input('des_id',null);
         try {
             DB::beginTransaction();
-            //check file image, if have process and save image
-            if ($image != NULL) {
-                $arrImage = CommonHelper::uploadFile(array($image), $diskLocalName, 'destination', 'public');
-                $newUploadedFileURI = $arrImage->data[0]["uri"];
-            }
-            DB::table("destination")
-                ->where("id", $desId)
+            DB::table("tourlist")
+                ->where("id", $idTour)
                 ->update($desData);
-            if ($newUploadedFileURI != null || $must_delete_old_image == 1) {
-                DB::table("destination")
-                    ->where("id", $desId)
-                    ->update(["image" => $newUploadedFileURI]);
-            }
             DB::commit();
-            if ($must_delete_old_image == 1) {
-                Storage::disk($diskLocalName)->delete($request->oldImgSrc);
-            }
             $result->status = SDBStatusCode::OK;
             $result->message = trans("Update success full");
         } catch (\Exception $exception) {
@@ -82,39 +71,29 @@ class ToursController extends Controller
     }
     public function add(Request $request)
     {
+        $des = DB::table('destination')->select('id','name','prefecture')->get();
         $dataPrefecture = DB::table('city')->select()->get();
-        return view('admin.destination_add',compact('dataPrefecture'));
+        return view('admin.tour_add',compact('dataPrefecture','des'));
     }
-    public function doAdd(UpdatePrefecture $request){
+    public function doAdd(UpdateTour $request){
         $result = new DataResultCollection();
         $desData = array();
-        $image = $request->file("image");
-        $must_delete_old_image = $request->input('must_delete_old_image', 0);
-        $newUploadedFileURI = null;
-        $diskLocalName = CommonHelper::getDefaultStorageDiskName();
-        $desData["name"] = $request->input("des_name");
-        $desData["prefecture"] = $request->input("prefecture");
+
+        $desData["name"] = $request->input("tour_name");
+        $desData["city_id"] = $request->input("city_id");
+        $desData["destination_id"] = $request->input("destination");
+        $desData["start"] = $request->input("start_time");
+        $desData["end"] = $request->input("end_time");
+        $desData["price"] = $request->input("price");
+        $desData["is_top"] = $request->input("is_top");
         $desData["content"] = $request->input("page_content");
         try {
             DB::beginTransaction();
-            //check file image, if have process and save image
-            if ($image != NULL) {
-                $arrImage = CommonHelper::uploadFile(array($image), $diskLocalName, 'destination', 'public');
-                $newUploadedFileURI = $arrImage->data[0]["uri"];
-            }
-            $desId = DB::table("destination")
-                ->insertGetId($desData);
-            if ($newUploadedFileURI != null || $must_delete_old_image == 1) {
-                DB::table("destination")
-                    ->where("id", $desId)
-                    ->update(["image" => $newUploadedFileURI]);
-            }
+            DB::table("tourlist")
+                ->insert($desData);
             DB::commit();
-            if ($must_delete_old_image == 1) {
-                Storage::disk($diskLocalName)->delete($request->oldImgSrc);
-            }
             $result->status = SDBStatusCode::OK;
-            $result->message = trans("Update success full");
+            $result->message = trans("Create success full");
         } catch (\Exception $exception) {
             DB::rollBack();
             $result->status = SDBStatusCode::Excep;

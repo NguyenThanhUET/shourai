@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 @section('content')
     <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
-        <button class="btn btn-link"><a class="btn-link" href="{{route('admin.destination.add')}}"><span class="fa fa-plus"></span></a></button>
+        <button class="btn btn-link"><a class="btn-link" href="{{route('admin.tours.add')}}"><span class="fa fa-plus"></span></a></button>
     </div>
     <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
         <div class="card">
