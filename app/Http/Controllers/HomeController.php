@@ -47,7 +47,11 @@ class HomeController extends Controller
         $to = $request->input('to', null);
         $departDate = $request->input('depart-date', null);
         $dt = Carbon::now();
-
+        $dataListTours = DB::table('tourlist')
+            ->orderBy('start', 'asc')
+            ->join('destination', 'tourlist.destination_id', '=', 'destination.id')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image, destination.content')
+            ->get();
 
         $query = DB::table('tourlist');
         if ($from != '' && $from != null) {
@@ -65,7 +69,6 @@ class HomeController extends Controller
         } else {
             $query = $query->where('tourlist.start', '>', $dt);
         }
-        $dataListTours = $query->selectRaw('tourlist.*,destination.*')->get();
         $countDataTour = count($dataListTours);
         return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate', 'dt'));
     }

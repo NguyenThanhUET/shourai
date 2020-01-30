@@ -75,7 +75,7 @@
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Xác nhận lại thông tin đăng kí</h4>
+                            <h4 class="modal-title">編集</h4>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
@@ -102,8 +102,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary btn-submit" onclick="submit()">Đồng ý</button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Sửa lại</button>
+                            <button type="button" class="btn btn-primary btn-submit" onclick="submit()">次</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">戻る</button>
                         </div>
                     </div>
 
@@ -120,10 +120,10 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
-                            <p>Bạn đã tiền hành đăng kí tour thành công, chúng tôi sẽ liên hệ với bạn sớm nhất để hoàn tất thủ tục đặt chỗ</p>
+                            <p>予約が出来ました。電話番号でご連絡させていただきます。</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="{{route('home')}}"><button type="button" class="btn btn-primary">Đồng ý</button></a>
+                            <a href="{{route('home')}}"><button type="button" class="btn btn-primary">Ok</button></a>
                         </div>
                     </div>
 

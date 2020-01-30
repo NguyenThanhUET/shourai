@@ -5,9 +5,20 @@
             margin-top: 50px;
         }
         .roberto-btn{
-            width: 100px;
             margin-bottom: 20px;
             text-align: center;
+        }
+        .btn-detail{
+            padding:0;
+        }
+        .footer-contact{
+            margin-bottom: 20px;
+        }
+        .button-contact{
+            margin-bottom: 40px;
+        }
+        .contact-text{
+           color: white;
         }
     </style>
         <!-- Welcome Area Start -->
@@ -46,8 +57,8 @@
                                     <div class="welcome-text text-center">
                                         <h6 data-animation="fadeInUp" data-delay="200ms">旅行 &amp; 体験</h6>
                                         <h2 data-animation="fadeInUp" data-delay="500ms">Shouraiへよこそう</h2>
-                                        <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Discover
-                                            Now</a>
+                                        <!--<a href="#" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Discover
+                                            Now</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +261,7 @@
                             <!-- <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
                             -->
                         </ul>
-                        <a href="{{route('detail')}}?idtour={{$dataListToursTop[$i]->id}}" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">詳細</a>
+                        <a href="{{route('detail')}}?idtour={{$dataListToursTop[$i]->id}}" class="btn roberto-btn" data-animation="fadeInUp" data-delay="700ms">詳細</a>
 
                     </div>
                 </div>
@@ -490,17 +501,16 @@
                             <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt="" height="300" width="300"></a>
                             <h2><?php echo $dataListTours[$i]->name; ?> <br></h2>
                             <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
-                            <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
-                            <?php echo "レビュー:★★★★★" ?>
+                            <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?><?php echo "円"?> <br>
                             <div class="col-12 col-md-3">
-                                <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
+                                <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn btn-detail">詳細</button> </a>
                             </div>
                         </div>
                     </div>
                     <?php } ?>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a href="{{route('listtour')}}"><button type="submit"class="btn roberto-btn mt-30">もっと見る</button></a>
+                    <a href="{{route('listtour')}}"><button type="submit"class="btn roberto-btn mt-30" >もっと見る</button></a>
                 </div>
             </div>
         <!-- </section> -->
@@ -547,17 +557,17 @@
 
         <!-- Call To Action Area Start -->
         <section class="roberto-cta-area">
-            <div class="container">
+            <div class="container footer-contact">
                 <div class="cta-content bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-7">
-                            <div class="cta-text mb-50">
-                                <h2>Contact us now!</h2>
-                                <h6>Contact (+81) 80-2148-9395 to book directly or for advice</h6>
+                            <div class="cta-text mb-50 contact-text">
+                                <a><i class="icon_phone"></i> <span>(81)080-2148-9395</span><br></a>
+                                <a><i class="icon_mail"></i> <span>shouraitour@gmail.com</span></a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-5 text-right">
-                            <a href="#" class="btn roberto-btn mb-50">Contact Now</a>
+                        <div class="col-12 col-md-5 text-right button-contact">
+                            <a href="{{route("contact")}}" class="btn roberto-btn mb-50">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -566,26 +576,26 @@
         <!-- Call To Action Area End -->
 
         <!-- Partner Area Start -->
-        <div class="partner-area">
+       <!-- <div class="partner-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="partner-logo-content d-flex align-items-center justify-content-between wow fadeInUp"
-                             data-wow-delay="300ms">
+                             data-wow-delay="300ms"> -->
                             <!-- Single Partner Logo -->
-                            <a href="#" class="partner-logo"><img src="img/core-img/p1.png" alt=""></a>
+                            <!-- <a href="#" class="partner-logo"><img src="img/core-img/p1.png" alt=""></a> -->
                             <!-- Single Partner Logo -->
-                            <a href="#" class="partner-logo"><img src="img/core-img/p2.png" alt=""></a>
+                            <!-- <a href="#" class="partner-logo"><img src="img/core-img/p2.png" alt=""></a> -->
                             <!-- Single Partner Logo -->
-                            <a href="#" class="partner-logo"><img src="img/core-img/p3.png" alt=""></a>
+                            <!-- <a href="#" class="partner-logo"><img src="img/core-img/p3.png" alt=""></a> -->
                             <!-- Single Partner Logo -->
-                            <a href="#" class="partner-logo"><img src="img/core-img/p4.png" alt=""></a>
+                            <!-- <a href="#" class="partner-logo"><img src="img/core-img/p4.png" alt=""></a> -->
                             <!-- Single Partner Logo -->
-                            <a href="#" class="partner-logo"><img src="img/core-img/p5.png" alt=""></a>
+                           <!-- <a href="#" class="partner-logo"><img src="img/core-img/p5.png" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Partner Area End -->
 @endsection

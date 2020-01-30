@@ -22,8 +22,9 @@
                          style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt="" height="300" width="300"></a>
                         <!-- Post Meta -->
-                        <!-- <div class="post-meta">
-                            <a href="#" class="post-date">{{$dataListTours[$i]->name}}</a>
+                        <!-- <div class="post-meta"> -->
+                        <h2><?php echo $dataListTours[$i]->name; ?> <br></h2>
+                           <!-- <a href="#" class="post-date"></a>
                             <a href="#" class="post-catagory">Event</a>
                         </div> -->
                         <!-- Post Title -->
@@ -32,8 +33,7 @@
                             them?</p> -->
 
                         <?php echo " 出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
-                        <?php echo " 値段:" ?> <?php echo $dataListTours[$i]->price; ?> <br>
-                        <?php echo " レビュー:★★★★★" ?>
+                        <?php echo " 値段:" ?> <?php echo $dataListTours[$i]->price; ?><?php echo "円" ?> <br>
 
                         <div class="col-12 col-md-3">
                             <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
@@ -43,7 +43,7 @@
                 <?php } ?>
                 <?php }else{?>
                     <div>
-                        ツアーが見つけません。
+                        <h4>該当するツアーが見つけません。</h4>
                     </div>
                 <?php  } ?>
             </div>

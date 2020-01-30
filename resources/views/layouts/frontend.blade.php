@@ -20,6 +20,9 @@
     ul.list {
         width: 100%;
     }
+    .power{
+        text-align: center;
+    }
 </style>
 <body>
 <!-- Preloader -->
@@ -79,11 +82,11 @@
                 <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="{{@asset('img/core-img/logo3.png')}}" alt=""></a>
+                    <a class="nav-brand" href="index.html"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        <span class="navbarToggler"></span>
                     </div>
 
                     <!-- Menu -->
@@ -130,7 +133,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-80">
                         <!-- Footer Logo -->
-                        <a href="#" class="footer-logo"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a>
+                        <!-- <a href="#" class="footer-logo"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a> -->
 
                         <!-- <h4>+12 345-678-9999</h4>
                         <span>Info.colorlib@gmail.com</span>
@@ -197,14 +200,8 @@
             <div class="row align-items-center">
                 <div class="col-12 col-md-8"> -->
                     <!-- Copywrite Text -->
-                    <div class="copywrite-text">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                                                                aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a> -->
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        PowerbyThom@Wu</p>
+                    <div class="copywrite-text power">
+                        <p>PowerbyThom@LabWu</p>
                     </div>
                 <!-- </div> -->
                <!-- <div class="col-12 col-md-4"> -->
