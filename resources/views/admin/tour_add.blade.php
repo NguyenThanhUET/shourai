@@ -44,7 +44,7 @@
                                         <label class="control-label" for="rice">Name</label>
                                         <input class="form-control" type="text" name="tour_name" id="tour_name"
                                                maxlength="100"
-                                               value="{{$dataTour->name}}"/>
+                                               value=""/>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -55,7 +55,7 @@
                                                     id="city_id">
                                                 <option value=''>Select prefecture</option>
                                                 <?php foreach ($dataPrefecture as $prefecture) { ?>
-                                                <option value="{{$prefecture->id}}" {{$dataTour->city_id==$prefecture->id?'selected':''}}>{{$prefecture->name}}</option>
+                                                <option value="{{$prefecture->id}}" >{{$prefecture->name}}</option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -65,7 +65,7 @@
                                                     id="destination">
                                                 <option value=''>Select destination</option>
                                                 <?php foreach ($des as $desRow) { ?>
-                                                <option value="{{$desRow->id}}" {{$dataTour->destination_id==$desRow->id?'selected':''}}>{{$desRow->name}}</option>
+                                                <option value="{{$desRow->id}}">{{$desRow->name}}</option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -76,11 +76,11 @@
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                             <label class="control-label" for="page_name">Start Time</label>
-                                            <input type="date" name="start_time" id="start_time" class="datepicker form-control" value="{{$dataTour->start}}">
+                                            <input type="date" name="start_time" id="start_time" class="datepicker form-control" value="">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label class="control-label" for="page_name">End Time</label>
-                                            <input type="date" name="end_time" id="end_time" class="datepicker form-control" value="{{$dataTour->end}}">
+                                            <input type="date" name="end_time" id="end_time" class="datepicker form-control" value="">
                                         </div>
                                     </div>
 
@@ -89,11 +89,11 @@
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                             <label class="control-label" for="page_name">Price</label>
-                                            <input type="number" name="price" id="price" class="form-control" value="{{$dataTour->price}}">
+                                            <input type="number" name="price" id="price" class="form-control" value="">
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label class="control-label" for="page_name">Is Top</label>
-                                            <div><input type="checkbox" <?php if($dataTour->is_top==1)echo 'checked'?> id="is_top" class="pull-left"></div>
+                                            <div><input type="checkbox" id="is_top" class="pull-left"></div>
 
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@
                                 <div class="form-group" style="display: flex;">
                                     <div class="parent_tinymce">
                                         <textarea class="tinymce" name="page_content"
-                                                  id="page_content">{{$dataTour->content}}</textarea>
+                                                  id="page_content"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -133,8 +133,7 @@
     <script src="{{asset('lib/backend/tinymce/js/tinymce/jquery.tinymce.min.js')}}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
     <script>
-        var _routeEdit = '{{route("admin.tours.do_edit")}}';
-        var _tourId = '{{$dataTour->id}}';
+        var _routeAdd = '{{route("admin.tours.do_add")}}';
         $(document).ready(function () {
             tinymce.init({
                 selector: '#page_content',
@@ -181,7 +180,6 @@
         $(document).on("click", ".update", function () {
             _commonClearError();
             let formData = new FormData();
-            formData.append("tour_id", _tourId);
             formData.append("tour_name", $("#tour_name").val());
             formData.append("city_id", $("#city_id").val());
             formData.append("destination", $("#destination").val());
@@ -197,7 +195,7 @@
                 },
                 contentType: false,
                 processData: false,
-                url: _routeEdit,
+                url: _routeAdd,
                 data: formData,
                 beforeSend: _showAjaxLoading(),
                 success: function (result) {
