@@ -10,6 +10,12 @@
         }
         .btn-book{
             width: 200px;
+            border-radius: 4px;
+        }
+        .title{
+            color:darkgreen;
+            font-size:55px;
+            font-weight: border: 2px solid #000;
         }
     </style>
     <link rel="stylesheet" href="{{asset('css/common/toastr.min.css')}}">
@@ -19,11 +25,11 @@
         <div class="container">
             <div class="row">
                 <!-- Section Heading -->
-                <div class="col-12">
+                <div class="col-12 title">
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms"
                          style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                         <!-- <h6>Our Blog</h6> -->
-                        <h2>予約</h2>
+                        予約
                     </div>
                 </div>
             </div>
@@ -50,7 +56,7 @@
                     </div>
                     <div class="col-12 book-group">
                         <label for="note">備考</label>
-                        <textarea class="form-control" name="note" id="note" maxlength="200"></textarea>
+                        <textarea class="form-control" name="note" id="note" maxlength="2000"></textarea>
                     </div>
                     <div class="col-12 book-group">
                         <label for="adult">大人</label>

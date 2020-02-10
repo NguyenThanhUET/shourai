@@ -16,12 +16,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        //Get data from database
-        //Block 1: lấy lít tours
+        
         $dataListTours = DB::table('tourlist')
             ->limit(6)->orderBy('start', 'asc')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')
-            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image, destination.content')
+            ->join('city','tourlist.city_id','=','city.id')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content as TContent, tourlist.start,tourlist.end, tourlist.price,tourlist.note,destination.image,destination.content,destination.name as Dname,city.name as Cname')
             ->get();
         //BLock 2: Lấy list tour noi bat
         $dataListToursTop = DB::table('tourlist')
@@ -47,13 +47,13 @@ class HomeController extends Controller
         $to = $request->input('to', null);
         $departDate = $request->input('depart-date', null);
         $dt = Carbon::now();
-        $dataListTours = DB::table('tourlist')
+        $query = DB::table('tourlist')
             ->orderBy('start', 'asc')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')
-            ->selectRaw('tourlist.id, tourlist.name, tourlist.content, tourlist.start,tourlist.end, tourlist.price,destination.image, destination.content')
-            ->get();
+            ->join( 'city', 'tourlist.city_id','=','city.id');
 
-        $query = DB::table('tourlist');
+        //tu day tro xuong vo tac dugn
+
         if ($from != '' && $from != null) {
             $query = $query->where('tourlist.city_id', '=', $from);
         }
@@ -63,14 +63,16 @@ class HomeController extends Controller
         if ($departDate != '' && $departDate != null) {
             $query = $query->where('tourlist.start', '=', $departDate);
         }
-        $query = $query->join('destination', 'destination.id', 'tourlist.destination_id');
         if ($departDate > $dt) {
             //nothing
         } else {
             $query = $query->where('tourlist.start', '>', $dt);
         }
+        //query la thang mang toan bo thong tin where nhung data lít tou phai lay = queryt-> 1 dong các cai select thi moi dc
+        $dataListTours = $query ->selectRaw('tourlist.id, tourlist.name,tourlist.city_id,tourlist.destination_id, tourlist.content, tourlist.start,tourlist.end, tourlist.price,tourlist.note,destination.image, destination.content,city.name as Cname')
+            ->get();// tại day thi datalist tour da dc lay ra
         $countDataTour = count($dataListTours);
-        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate', 'dt'));
+        return view("listtour", compact('dataListTours', 'countDataTour', 'from', 'to', 'departDate', 'dt','query'));
     }
 
     public function detail(Request $request)
@@ -78,7 +80,8 @@ class HomeController extends Controller
         $idtour = $request->input('idtour', null);
         $dataListTours = DB::table('tourlist')
             ->join('destination', 'tourlist.destination_id', '=', 'destination.id')->where('tourlist.id', '=', $idtour)
-            ->selectRaw('tourlist.id, tourlist.name, tourlist.content as TContent, tourlist.start,tourlist.end, tourlist.price,destination.image,destination.content')
+            ->join('city','tourlist.city_id','=','city.id')
+            ->selectRaw('tourlist.id, tourlist.name, tourlist.content as TContent, tourlist.start,tourlist.end, tourlist.price,tourlist.note,destination.image,destination.content,destination.name as Dname,city.name as Cname')
             ->first();
 //dd($dataListTours);
         return view("detail", compact('dataListTours'));

@@ -3,6 +3,8 @@
     <style>
         .listtour{
             margin-top: 50px;
+            font-size:40px;
+            color:darkgreen;
         }
         .roberto-btn{
             margin-bottom: 20px;
@@ -19,6 +21,33 @@
         }
         .contact-text{
            color: white;
+        }
+        .tourname{
+            font-weight:bold;
+            color:forestgreen;
+            font-size:32px;
+        }
+        .price{
+            color:orangered;
+            font-size:28px;
+            padding-left:0px;
+        }
+        .tour-day{
+            background:hotpink;
+            box-shadow:papayawhip ;
+            line-height: 1.2;
+            font-family: "Trebuchet MS", sans-serif;
+            border-radius: 3px;
+            font-size:16px;
+        }
+        .detail{
+            padding-left: 0px;
+        }
+        .note{
+            font-size:13px;
+        }
+        .search{
+            color:darkgreen;
         }
     </style>
         <!-- Welcome Area Start -->
@@ -97,7 +126,7 @@
                 <div class="container-fluid">
                     <div class="hotel-search-form">
                         <form action="{{route('listtour')}}" method="get">
-                            <div class="row justify-content-between align-items-end">
+                            <div class="row justify-content-between align-items-end search">
                                 <div class="col-6 col-md-2 col-lg-3">
                                     <label for="from">出発地</label>
                                     <select name="from" id="from" class="form-control">
@@ -261,7 +290,7 @@
                             <!-- <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
                             -->
                         </ul>
-                        <a href="{{route('detail')}}?idtour={{$dataListToursTop[$i]->id}}" class="btn roberto-btn" data-animation="fadeInUp" data-delay="700ms">詳細</a>
+                        <a href="{{route('detail')}}?idtour={{$dataListToursTop[$i]->id}}" class="btn roberto-btn detail" data-animation="fadeInUp" data-delay="700ms">詳細</a>
 
                     </div>
                 </div>
@@ -487,7 +516,7 @@
                     <div class="col-12">
                         <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
                             <!--<h6>List Tour</h6> -->
-                            <h3 class="listtour"> ツアー一覧</h3>
+                            <div class="listtour"> ツアー一覧</div>
                         </div>
                     </div>
                 </div>
@@ -499,11 +528,15 @@
                         <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms"
                              style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                             <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}" class="post-thumbnail"><img src="{{\App\Helpers\CommonHelper::getImageUrl($dataListTours[$i]->image)}}" alt="" height="300" width="300"></a>
-                            <h2><?php echo $dataListTours[$i]->name; ?> <br></h2>
-                            <?php echo "出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
-                            <?php echo "値段:" ?> <?php echo $dataListTours[$i]->price; ?><?php echo "円"?> <br>
-                            <div class="col-12 col-md-3">
-                                <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn btn-detail">詳細</button> </a>
+                            <div class="tourname"><?php echo $dataListTours[$i]->name; ?> <br></div>
+                            <?php echo " 出発日:" ?> <?php echo $dataListTours[$i]->start; ?> <br>
+                            <span class="tour-day">３泊４日</span>
+                            <div class="depart"><?php echo $dataListTours[$i]->Cname;?><?php echo "発" ?> </div>
+                            <div class="col-md-8 price"><?php echo $dataListTours[$i]->price; ?><?php echo "円" ?></div>
+                            <div class="note"><?php echo $dataListTours[$i]->note; ?></div>
+
+                            <div class="col-12 col-md-3 detail">
+                                <a href="{{route('detail')}}?idtour={{$dataListTours[$i]->id}}"><button type="submit" class="form-control btn roberto-btn w-100">詳細</button> </a>
                             </div>
                         </div>
                     </div>

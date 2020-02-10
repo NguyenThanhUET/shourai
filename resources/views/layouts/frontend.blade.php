@@ -23,6 +23,10 @@
     .power{
         text-align: center;
     }
+    .thanh{
+        font-size:30px;
+        color:darkslategray;
+    }
 </style>
 <body>
 <!-- Preloader -->
@@ -82,7 +86,7 @@
                 <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a>
+                    <a class="nav-brand" href="{{route('home')}}"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -96,10 +100,12 @@
                             <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                         </div>
                         <!-- Nav Start -->
-                        <div class="classynav">
+                        <div class="classynav thanh">
                             <ul id="nav">
-                                <li class="active"><a href="{{route('home')}}">ホームページ</a></li>
+                                <li class="active "><a href="{{route('home')}}">ホームページ</a></li>
                                 <li class="active"><a href="{{route('listtour')}}">ツアー一覧</a></li>
+                                <li class="active"><a href="#">ニュース</a></li>
+                                <li class="active"><a href="#">お客様の声</a></li>
                                 <li class="active"><a href="{{route('contact')}}">お問い合わせ</a></li>
                             </ul>
                             <!-- Search -->
