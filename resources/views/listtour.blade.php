@@ -25,12 +25,21 @@
         }
         .title{
             color:darkgreen;
-            font-size:55px;
+            font-size:50px;
             font-weight: border: 2px solid #000;
         }
         .note{
             font-size:13px;
         }
+        .list-content{
+            min-height: 424px;
+        }
+        @media only screen and (max-height: 768px) {
+            .list-content{
+                min-height: 135px !important;
+            }
+        }
+
 
     </style>
     <section class="roberto-blog-area section-padding-100-0">
@@ -46,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row list-content" >
             <?php if($countDataTour>0){ ?>
             <?php for($i = 0;$i < $countDataTour;$i++){ ?>
             <!-- Single Post Area item 1-->
