@@ -25,7 +25,7 @@
         }
         .title{
             color:darkgreen;
-            font-size:50px;
+            font-size:45px;
             font-weight: border: 2px solid #000;
         }
         .note{
