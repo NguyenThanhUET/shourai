@@ -136,7 +136,7 @@
         <div class="container">
             <div class="row align-items-baseline justify-content-between">
                 <!-- Single Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-3" style="margin: auto;">
                     <div class="single-footer-widget mb-80">
                         <!-- Footer Logo -->
                         <!-- <a href="#" class="footer-logo"><img src="{{@asset('img/core-img/shourailogo.png')}}" alt=""></a> -->
